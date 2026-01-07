@@ -1,0 +1,259 @@
+/* Жалпы стилдер */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff4500; /* Кызгылт сары түс */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Башкы беттин кооздолушу */
+.hero {
+    background: #f4f4f4;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn {
+    background: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Товарлардын сеткасы */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Бардык сүрөттөрдүн контейнерден ашып кетпеши үчүн */
+img {
+    max-width: 100%; /* Контейнердин кеңдигинен ашпасын */
+    height: auto;    /* Пропорциясын сактасын */
+    display: block;  /* Астындагы боштуктарды алсын */
+}
+
+/* Атайын биздин товардын карточкасындагы сүрөттөр үчүн */
+.card img {
+    width: 100%;     /* Карточканын ичин толук толтурсун */
+    height: 200px;   /* Бирдей бийиктикте болсун */
+    object-fit: cover; /* Сүрөттү созбой, керектүү жерлерин кесип тууралайт */
+    border-radius: 8px; /* Бурчтарын бир аз тегеретип коёт */
+}
+
+.hero {
+    /* Сүрөттүн шилтемесин бул жерге коюңуз */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                      url('https://images.unsplash.com/photo-1484156811203-2ed23c7bb3a4?q=80&w=2070');
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Экрандын 80% ээлейт */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Текст ак түстө болот */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Текст жакшы окулушу үчүн көлөкө */
+}
+
+.card {
+    background: white;
+    border: none; /* Рамканы алып салабыз */
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Жумшак көлөкө */
+    transition: transform 0.3s ease; /* Анимация үчүн */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Чычканды алып барганда өйдө көтөрүлөт */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7); /* Бир аз тунук кара түс */
+    color: white;
+    padding: 15px 0;
+    position: fixed; /* Экрандын үстүндө дайым көрүнүп турат */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Башка элементтердин астында калбашы үчүн */
+    transition: background 0.3s;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto; /* Ортолоо */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Менюлардын ортосундагы аралык */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #ff4500; /* Чычканды алып барганда түсү өзгөрөт */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7); /* Бир аз тунук кара түс */
+    color: white;
+    padding: 15px 0;
+    position: fixed; /* Экрандын үстүндө дайым көрүнүп турат */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Башка элементтердин астында калбашы үчүн */
+    transition: background 0.3s;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto; /* Ортолоо */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Менюлардын ортосундагы аралык */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #ff4500; /* Чычканды алып барганда түсү өзгөрөт */
+}
+
+.hero {
+    padding-top: 80px; /* Менюнун бийиктигиндей боштук */
+}
+
+.footer {
+    background: #222;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+.wa-btn {
+    background: #25d366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.9); /* Каныккан кара түс */
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    gap: 40px; /* Тексттердин арасы */
+}
+
+nav ul li a {
+    font-size: 16px;
+    letter-spacing: 1px; /* Тамгалардын арасы */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Экран тарыганда астына түшөт */
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 300px; /* Бирдей кеңдик */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Элементтерди ичине тегиз таратат */
+}
